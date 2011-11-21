@@ -1,0 +1,36 @@
+#menu {
+list-style: none;
+width: 150px;
+padding-top: 35px;
+height: 214px;
+padding-left: 50px;
+background: url(images/background.png) no-repeat;
+}
+#menu ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu a:link{
+color: #b8b8b8;
+font-family: Trebuchet MS;
+font-size: 14px;
+height: 23px;
+display:block;
+text-decoration: none;
+padding: 8px 0 0 0px;
+font-weight:normal;
+}
+
+#menu a:visited{
+text-decoration: line-through;
+}
+
+#menu a:hover{
+color: #595959;
+}
+
+#menu a:active{
+color: #dbdbdb;
+}

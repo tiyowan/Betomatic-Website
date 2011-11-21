@@ -1,0 +1,319 @@
+/* 
+    Document   : base
+    Created on : Sep 4, 2011, 10:21:07 AM
+    Author     : Hamza
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#page {
+    width: 960px;    
+    border-left: 5px solid rgba(0,0,0,0.2);
+    border-right: 5px solid rgba(0,0,0,0.2);
+    border-bottom: 5px solid rgba(0,0,0,0.2);
+    margin: 0 auto;  
+    margin-bottom: 50px;
+    background: #eee;
+}
+
+#page {
+    -moz-background-clip: border;     /* Firefox 3.6 */
+    -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+    background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+    -moz-background-clip: content;     /* Firefox 3.6 */
+    -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+    background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */        
+}
+
+
+
+
+
+/* =GLOBAL NAVIGATION */ 
+
+div #global-nav {
+   
+    background: url(../img/metal3.jpg);
+    background-position: center;
+	border-bottom: solid 1px #1e4c7f;
+	border-top: solid 1px #1e4c7f;
+    height: 80px;
+	padding: 0 30px;
+}
+    
+
+
+div #social-icons {    
+    float: right;
+    height: 59px;
+    margin-top: 8px;
+}
+
+    
+    .footerCol {        
+        padding: 20px 20px;
+        float: left;
+        font-size: 10px;
+        font-family: Verdana;
+        font-weight: bold;        
+        color: #333;
+		margin-top: 20px;
+    }
+    
+    .footerCol h1 {
+        font-size: 16px;
+        font-family: Verdana;
+        font-weight: bold;
+        padding-bottom: 7px;             
+        letter-spacing: 0.2px;
+    }
+    
+    #footer-slogan {
+        padding: 18px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Verdana;
+    }
+    
+    .footerCol li {
+        font-family: Verdana;
+        font-size: 14px;
+        padding-top: 10px;
+      
+
+        /* background: #ddd; */
+    }
+
+
+   
+    
+/* =Breadcrumb */
+ 
+#breadcrumbs {
+    background: #36393D;
+    background-position: center;
+    font-family: Verdana;
+    font-size: 14px;
+    color: #eee;
+	padding: 18px 30px;
+}
+
+#breadcrumbs ul {
+    margin-left: 0;
+    padding-left: 0;    
+    display: inline;
+    border: none;    
+}	
+
+#breadcrumbs ul li {
+    margin-left: 0;
+    padding-left: 2px;
+    border: none;
+    list-style: none;
+    display: inline;    
+}
+
+#breadcrumbs ul li:before {
+    content: "\0020 \0020 \0020 \00BB \0020";
+}
+
+#breadcrumbs ul li.first:before {
+    content: " ";
+}
+        
+/* =Footer */
+
+#footer-slogan h6 {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+
+#menu #current {
+	background: #1e4c7f;
+        color: #EEE;
+}
+
+#menu {
+	font-size: 13px;
+        float: left;        
+         
+        
+		padding-top: 20px;
+}
+
+#menu ul {
+	list-style: none;	
+}
+
+#menu li {
+	float: left;
+	position: relative;
+}
+
+#menu a {
+	color: #333;
+	display: block;
+	line-height: 38px;
+	padding: 0 15px;
+	text-decoration: none;	
+        font-size: 16px;
+        font-family: Verdana;                
+        letter-spacing: 0.2px;        
+        opacity: 0.8;
+		font-weight: bold;
+}
+
+
+#menu ul ul {
+	display: none;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	float: left;
+	/* width: 180px; */
+        width: 180px;
+	z-index: 99999;        
+}
+
+#menu ul ul li {
+	min-width: 180px;
+}
+
+#menu ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+#menu ul ul a {
+	background: #eee;
+	line-height: 1em;
+	padding: 10px;
+	width: 210px;
+	height: auto;        
+}
+
+#menu li:hover > a,
+#menu ul ul :hover > a {
+	background: #1e4c7f;
+        color: #EEE;
+	       
+}
+#menu ul li:hover > ul {
+	display: block;
+}
+
+.clear{clear:both;}
+
+#content-box {
+	position: relative;
+	width: 900px;
+
+}
+#content-box-top {
+	background: url('../img/top.png') no-repeat;
+	height: 47px;
+}
+#content-box-bottom {
+	background: url('../img/bottom.png') no-repeat;
+	height: 47px;
+}
+
+#content-box-middle {
+	height: auto;
+	position: relative;
+}
+
+#content-box-middle img.bg {
+	height: 100%;
+	position: absolute;
+	width: 900px;
+	z-index: 1;
+}
+#content-inner {
+	padding: 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+#content h1 {
+    font-family: Arial, serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #1e4c7f;
+    padding-left: 30px;
+}
+
+#content p {    
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 18px;
+    padding-left: 30px;
+}
+
+#content ul {
+}
+
+#content li {
+    font-family: Georgia, serif;
+    list-style-type: square;
+    margin-left: 45px;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e4c7f;
+}
+
+#menu123456 {
+list-style: none;
+width: 150px;
+padding-top: 35px;
+height: 214px;
+padding-left: 50px;
+background: url(../img/menu_background.png) no-repeat;
+}
+#menu123456 ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu123456 a:link{
+color: #1e4c7f;
+font-family: Georgia;
+font-size: 16px;
+height: 23px;
+display:block;
+text-decoration: none;
+padding: 8px 0 0 0px;
+font-weight:normal;
+}
+
+#menu123456 a:visited{
+text-decoration: line-through;
+}
+
+#menu123456 a:hover{
+color: #595959;
+}
+
+#menu123456 a:active{
+color: #dbdbdb;
+}
+
+strong {
+    font-weight: bold;
+}
